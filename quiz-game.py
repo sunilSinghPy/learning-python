@@ -36,7 +36,12 @@ def quiz(questions):
             for key,opt in option_index.items():
                 if i == key:
                     print(opt+'.'+o)
-        answer = input("Please Enter right Option(A/B/C/D)").upper()
+        while True:
+            answer = input("Please Enter right Option(A/B/C/D)").upper()
+            if(answer == 'A' or answer =='B' or answer =='C' or answer == 'D'):
+                break
+            else:
+                continue
         if answer == question['answer']:
             scores += 1
             print(f"Correct!! Your Score is {scores}")
@@ -44,6 +49,8 @@ def quiz(questions):
         else:
             print(f"Wrong Answer!! Your Score is {scores}")
         print("=========================")
+        
+        
     print(f"Your final score is :{scores}")
 
 quiz(questions)
