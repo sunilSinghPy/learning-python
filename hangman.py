@@ -11,7 +11,6 @@ blank_list = list(print_blank)
 while(number_of_attampt):
     word_char_list = list(word)
     print(word_char_list)
-    print(blank_list)
     guess_char = input("Enter Your Guess: ")
 
 # input value check loop
@@ -25,6 +24,7 @@ while(number_of_attampt):
             for i in word_char_list:
                 print(word_char_list.index(i),i) 
                 if guess_char == i:
+                    word_char_list = word_char_list
                     blank_list[word_char_list.index(i)] =i
     else:
         print(f"You gussed the word ({word}) in number of attampt ")
