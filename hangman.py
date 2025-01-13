@@ -30,4 +30,4 @@ while(number_of_attampt):
         print(f"You gussed the word ({word}) in number of attampt ")
     print(blank in blank_list)
     print(blank,blank_list)
-    number_of_attampt = number_of_attampt-1
+    number_of_attampt = number_of_attampt-1  #coders block 
