@@ -31,3 +31,5 @@ while(number_of_attampt):
     print(blank in blank_list)
     print(blank,blank_list)
     number_of_attampt = number_of_attampt-1  #coders block 
+
+    # miner update 3
