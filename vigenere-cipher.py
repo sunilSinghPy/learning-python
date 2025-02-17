@@ -1,4 +1,4 @@
-text = "Hello World"
+text = 'Hellow World!'
 custom_key = "python"
 
 def vigenere(message, key, direction=1):
@@ -21,7 +21,15 @@ def vigenere(message, key, direction=1):
             final_message += alphabet[new_index]
     return final_message
 
-encryption = vigenere(text, custom_key)
-decryption = vigenere(encryption, custom_key, -1)
-print(encryption)
-print(decryption)
+def encrypt(message,key):
+    return vigenere(message,key,1)
+def decrypt(message,key):
+    return vigenere(message,key,-1)
+
+encryption = encrypt(text,custom_key)
+decryption = decrypt(text,custom_key)
+
+print(f'\nPlain Text: {text}\nKey: {custom_key}')
+print(f'\nEncrypted Text: {encryption}\n')
+
+
