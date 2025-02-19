@@ -37,7 +37,7 @@ def main():
                 print(f'\nExpenses for {category}')
                 filter_by_category(expenses, category)
             else:
-                print("No Category Found!")   
+                print(Fore.RED + "No Category Found!")   
             
         elif choice == '5':
             break
